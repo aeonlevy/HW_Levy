@@ -4,4 +4,6 @@ random_numbers
 #### Compute the Mean
 mean_value <- mean(random_numbers)
 mean_value
-#### 
+#### Compute the Standard Deviation
+sd_value <- sd(random_numbers)
+sd_value
