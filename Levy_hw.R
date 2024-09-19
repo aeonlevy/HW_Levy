@@ -7,3 +7,6 @@ mean_value
 #### Compute the Standard Deviation
 sd_value <- sd(random_numbers)
 sd_value
+#### Print the Mean and Standard Deviation
+print(paste("The Mean is", mean_value, "and the Standard Deviation is", sd_value))
+####
