@@ -19,3 +19,21 @@ map_dbl(dt, sd)
 map_df(dt, sqrt)
 ## 1d)
 summary(dt)
+
+
+
+#Problem 3:
+
+data(mtcars)
+
+# Initialize an output vector to store standard deviation values
+output <- vector("double", ncol(mtcars))
+
+# Loop each column mtcars 
+for (i in seq_along(mtcars)) {
+  # Calculate sd and store 
+  output[i] <- sd(mtcars[[i]])
+}
+
+# Print sd for column
+output
