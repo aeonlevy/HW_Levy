@@ -25,8 +25,6 @@ summary(dt)
 
 
 ##### Problem 2: 
-library(ggplot2)
-
 myfunction <- function(){
   s_means <- numeric(10000)
   for(i in seq_len(10000)) {
@@ -79,3 +77,19 @@ ggplot(data=data.frame(save_me), aes(x=save_me))+
   geom_histogram(color = "red", fill = "blue")+
   labs(title = "Distribution of Means") 
     
+#Problem 3:
+
+data(mtcars)
+
+# Initialize an output vector to store standard deviation values
+output <- vector("double", ncol(mtcars))
+
+# Loop each column mtcars 
+for (i in seq_along(mtcars)) {
+  # Calculate sd and store 
+  output[i] <- sd(mtcars[[i]])
+}
+
+# Print sd for column
+output
+
